@@ -1,0 +1,60 @@
+.investors {
+    background: url('../images/polygon-bg.svg');
+    background-size: cover;
+
+    p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        color: $green;
+    }
+
+    h3 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        color: #727878;
+    }
+
+    .lead {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        color: #727878;
+    }
+
+    .btn {
+        transition: all .33s;
+
+        &:hover {
+            color: rgb(45, 71, 28);
+            box-shadow: 0px 0px 20px rgb(114, 114, 114);
+        }
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .investors {
+        &-block {
+            // display: flex;
+            flex-direction: column-reverse;
+
+            &__img {
+                max-width: 85%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    // .investors-block__img {
+    //     img {
+    //         max-width: 70%;
+    //     }
+    // }
+}

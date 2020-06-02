@@ -1,0 +1,63 @@
+@import './base/mixins';
+@import './base/vars';
+@import './base/fonts';
+
+
+
+body {
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #f9f9f9;
+    font-family: 'Rubik', 'Montserrat',sans-serif;
+}
+
+.container {
+    max-width: 1170px !important;
+}
+
+.container-fluid {
+    max-width: 1450px !important;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+::selection {
+    background-color:#52C600;
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/about';
+@import 'blocks/choice';
+@import 'blocks/actions';
+@import 'blocks/set';
+@import 'blocks/season';
+@import 'blocks/order';
+@import 'blocks/partnership';
+@import 'blocks/faq';
+@import 'blocks/footer';
+@import 'blocks/membership';
+@import 'blocks/community';
+@import 'blocks/investors';
+@import 'blocks/modals';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

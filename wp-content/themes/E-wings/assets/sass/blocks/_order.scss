@@ -1,0 +1,122 @@
+.order {
+    background: url('../images/map-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 900px;
+    background-position-y: center;
+
+    &-question {
+        span {
+            border-bottom: 3px solid $green;
+            width: 100px;
+        }
+
+        p {
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            color: black;
+        }
+
+    }
+}
+
+
+.order-form {
+
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        color: gray;
+
+        span {
+            color: $green;
+        }
+
+    }
+}
+.order-block {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(36, 32, 32, 0.397);
+
+    &__title {
+        color: $green;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+
+.count-sam {
+    span {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        color: #8b8b8b;
+    }
+
+    
+}
+
+.plus,
+.plus-1 {
+    color: $green;
+    background-color: #d0f0ba !important;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
+
+.min,
+.min-1 {    
+    color: $green;
+    background-color: #f2ffe0 !important;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
+
+.from {
+    color: #8b8b8b;
+}
+
+
+.input-group-order {
+    label {
+        position: absolute;
+        left: 60px;
+    }
+}
+
+@media (max-width: $screen-md-max) {
+    .order {
+        height: 100vh;
+        margin-bottom:90px;
+        background-position-y: 20%;
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    .promo-store {
+        // justify-content: space-around;
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    .order {
+        height: 115vh;
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    .count-order {
+        flex-direction: column;
+    }
+}

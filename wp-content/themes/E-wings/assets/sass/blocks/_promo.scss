@@ -1,0 +1,136 @@
+.popup2 {
+    position: fixed;
+}
+
+.promo {
+    background: #a2a6a5 url('../images/promo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    height: 100vh;
+    // padding-top: 50px;
+
+    &-wrapper {
+    }
+
+    &-block {
+        margin-top: 150px;
+    }
+
+    &-subheading {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40px;
+    }
+
+    &-title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        text-align: left;
+
+        span {
+            font-weight: 500;
+            color: #1C1C1C;
+            font-family: Montserrat;
+            font-style: normal;
+            font-size: 60px;
+        }
+    }
+
+    &-how {
+        .how {
+
+            &__go {
+                background: linear-gradient(75.39deg, #52C600 14%, rgb(108, 190, 0) 100%);
+                padding: 12px 30px 12px 35px;
+                border-radius: 38px;
+                border: 2px solid transparent;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                transition: all .33s;
+
+                &:hover {
+                    color: white;
+                    background: none;
+                    border: 2px solid #3fff00;
+
+                    // border: inherit solid $green;
+                    
+                }
+            }
+
+            &__work {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                border-bottom: 2px solid $green;
+                transition: all .33s;
+
+                &:hover {
+                    color: black;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    &-store {
+        a {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 1440px) {
+    .about {
+        background-position-x: center !important;
+        background-position-y: 140px !important;
+        padding-top: 50px !important;
+        &-row {
+            flex-direction: column;
+        }
+    }
+
+    
+}
+
+@media (max-width: 767px) {
+    .promo {
+        background: url('../images/back-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: bottom;
+    }
+
+    .promo-block {
+        margin-top: 0px !important;
+    }
+
+    .how__go {
+        padding: 12px 45px 12px 41px !important
+    }
+}
+
+@media (max-width: 567px) {
+    .promo-subheading {
+        font-size: 25px;
+    }
+
+    .promo-title {
+        font-size: 33px;
+        span {
+            font-size: 36px;
+        }
+    }
+}

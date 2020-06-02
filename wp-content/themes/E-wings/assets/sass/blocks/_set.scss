@@ -1,0 +1,57 @@
+.set {
+    background: url('../images/map-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 400px;
+
+    .img-app {
+        position: relative;
+        height:400px;
+
+        &-link {
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-62%);
+            // width:670px;
+            height:700px;
+            object-fit:cover;
+        }
+    }
+
+    &-block {
+        
+        h3 {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+        }
+    }
+
+}
+
+.img-app-mobile {
+    display: none;
+}
+
+
+@media (max-width: $screen-lg-max) {
+    .set-wrap {
+        flex-direction: column-reverse;
+    }
+
+    .img-app-link {
+        display: none;
+    }
+
+    .img-app-mobile {
+        display: block;
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .set {
+        max-height: 500px;
+    }
+}
