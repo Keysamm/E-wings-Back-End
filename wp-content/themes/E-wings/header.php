@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title><?php bloginfo('name'); echo " | "; bloginfo('description'); ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,8 +23,8 @@
             <div class="row d-flex align-items-baseline justify-content-between">
                 <div class="col-sm-12 text-sm-center mb-sm-3 col-lg-2 ">
                     <div class="logo">
-                        <a href="#" class="logo-link">
-                            <img src="<?php echo bloginfo('template_url'); ?>/assets/images/logo.svg" class="logo-img" alt="Logo">
+                        <a href="<?php echo get_home_url(); ?>" class="logo-link">
+                            <?php the_custom_logo();?>
                         </a>
                     </div>
                 </div>

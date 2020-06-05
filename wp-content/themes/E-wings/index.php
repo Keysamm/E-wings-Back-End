@@ -9,11 +9,10 @@
                 <div class="col-lg-7 pt-4 promo-wrapper">
                     <div class="promo-block text-center text-md-center text-lg-left">
                         <p class="promo-subheading r">
-                            Будь вільним
+                            <?php the_field('tagline_header_first'); ?>
                         </p>
                         <h1 class="promo-title pt-0 text-center text-lg-left">
-                            <span>Візьми</span>
-                            E-wings
+                            <?php the_field('tagline_header_second'); ?>
                         </h1>
                     </div>
                     <div class="promo-how ">
@@ -29,10 +28,10 @@
                     </div>
                     <div
                         class="promo-store d-block justify-content-between text-center mt-5 d-md-flex text-md-center text-lg-left flex-md-column">
-                        <a href="#" class="mr-sm-2">
+                        <a href="<?php the_field('download_appstore'); ?>" class="mr-sm-2">
                             <img src="<?php echo bloginfo('template_url'); ?>/assets/images/app-store.png" alt="App-Store">
                         </a>
-                        <a href="#" class="mt-4">
+                        <a href="<?php the_field('download_googleplay'); ?>" class="mt-4">
                             <img src="<?php echo bloginfo('template_url'); ?>/assets/images/google-play.png" alt="Google-Play">
                         </a>
                     </div>
@@ -102,72 +101,65 @@
                 <div class="col-lg-8">
                     <div class="block-about">
                         <span class="block-about__subheading text-uppercase">
-                            Про проект
+                            <?php the_field('about_project'); ?>
                         </span>
                         <h2 class="block-about__title">
-                            E-wings це не просто перший шерінг електросамокатів в Україні
+                            <?php the_field('title_project'); ?>
                         </h2>
                         <p class="block-about__desc">
-                            <span style="color: #52C600; font-size: 40px; font-weight: bold;">E</span>
-                            wings це проект пополяризації альтернативних видів транспорту який допоможе дістатись швидко
-                            в потрібну локацію, не створюючи транспортних заторів і без забруднення повітря. e-wings —
-                            це партнерська програма яка допоможе тобі внести свій вклад в проект та навіть отримувати за
-                            це відсоток.
+                            <?php the_field('paragraph_project'); ?>
                         </p>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
                     <div class="about-pic">
-                        <img class="about-img img-fluid" src="<?php echo bloginfo('template_url'); ?>/assets/images/about-img.png" alt="About">
+                        <img class="about-img img-fluid" src="<?php the_field('about_img_project'); ?>">
                     </div>
                 </div>
             </div>
             <div class="row mt-5 d-flex justify-content-between">
                 <div class="col-6 mb-md-3 col-lg-3 d-flex">
                     <div class="about-item d-flex flex-column text-center px-3 py-5">
-                        <img src="<?php echo bloginfo('template_url'); ?>/assets/images/icon-tel.svg" alt="">
+                        <img src="<?php the_field('advantages_img_№1'); ?>">
                         <p class="about-item__title pt-3">
-                            Зручний мобільний додаток
+                            <?php the_field('advantages_title_№1'); ?>
                         </p>
                         <span class="about-item__desc pb-5">
-                            Наш додаток для IOS та Android завжди під рукою. Він продуманий і розроблений під потреби
-                            наших користувачів. Ми цінуємо ваш час.
+                            <?php the_field('advantages_descr_№1'); ?>
                         </span>
                     </div>
                 </div>
                 <div class="col-6 mb-md-3 col-lg-3 d-flex">
                     <div class="about-item d-flex flex-column text-center px-3 py-5">
-                        <img src="<?php echo bloginfo('template_url'); ?>/assets/images/icon-shield.svg" alt="">
+                        <img src="<?php the_field('advantages_img_№2'); ?>">
                         <p class="about-item__title pt-3">
-                            Комфорт і Швидкість
+                            <?php the_field('advantages_title_№2'); ?>
                         </p>
                         <span class="about-item__desc ">
-                            Наші самокати та велосипеди розвивають швидкість до 25 км/год. Обладнані додатковими
-                            амортизаторами для комфорту вашої поїздки.
+                            <?php the_field('advantages_descr_№2'); ?>
                         </span>
                     </div>
                 </div>
                 <div class="col-6 mb-md-3 col-lg-3 d-flex">
                     <div class="about-item d-flex flex-column text-center px-3 py-5">
-                        <img src="<?php echo bloginfo('template_url'); ?>/assets/images/icon-samokat.svg" alt="">
+                        <img src="<?php the_field('advantages_img_№3'); ?>">
                         <p class="about-item__title pt-3">
-                            Якісний транспорт
+                            <?php the_field('advantages_title_№3'); ?>
                         </p>
                         <span class="about-item__desc pb-5">
-                            We have developed more than 100 successful projects in various subjects, so we clearly know
-                            what makes online stores profitabl
+                            <?php the_field('advantages_descr_№3'); ?>
                         </span>
                     </div>
                 </div>
                 <div class="col-6 mb-md-3 col-lg-3 d-flex">
                     <div class="about-item d-flex flex-column text-center px-3 py-5">
-                        <img src="<?php echo bloginfo('template_url'); ?>/assets/images/icon-price.svg" alt="">
+                        <img src="<?php the_field('advantages_img_№4'); ?>">
                         <p class="about-item__title pt-3">
-                            Приємні ціни
+                            <?php the_field('advantages_title_№4'); ?>
                         </p>
                         <span class="about-item__desc pb-5">
-                            Вартість розблокування одного транспортного засобу: 20 грн. Вартість 1 хв. - 1.5 грн.
+                            <?php the_field('advantages_descr_№4'); ?>
                         </span>
                     </div>
                 </div>
@@ -180,19 +172,19 @@
             <div class="row pt-5">
                 <div class="col-lg-12 d-flex justify-content-center">
                     <h3 class="choice-title text-center text-lg-left">
-                        Обери свої E-wings
+                        <?php the_field('title_chose_ewings'); ?>
                     </h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="choice-img">
-                        <img class="img-fluid" src="<?php echo bloginfo('template_url'); ?>/assets/images/choice-samokat-1.png" alt="Самокат">
+                        <img class="img-fluid" src="<?php the_field('img_scooter_left'); ?>">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="choice-img">
-                        <img class="img-fluid" src="<?php echo bloginfo('template_url'); ?>/assets/images/choice-samokat-2.png" alt="Самокат">
+                        <img class="img-fluid" src="<?php the_field('img_scooter_right'); ?>">
                     </div>
                 </div>
             </div>
@@ -204,65 +196,59 @@
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-center">
                     <h3 class="actions-title">
-                        Як це працює?
+                        <?php the_field('title_how_does_it_work'); ?>
                     </h3>
                 </div>
             </div>
 
             <div class="row text-left align-items-center justify-content-start pt-5 offset-md-2 ">
                 <div class="col-6 col-md-6">
-                    <img alt="image" class="img-fluid" src="<?php echo bloginfo('template_url'); ?>/assets/images/start-trip.svg">
+                    <img alt="image" class="img-fluid" src="<?php the_field('img_how_ewings_№1'); ?>">
                 </div>
 
                 <div class="col-6 col-md-5 offset-md-1 ">
-                    <h2><strong>Початок поїздки</strong></h2>
+                    <h2><strong><?php the_field('title_how_ewings_№1'); ?></strong></h2>
                     <p class="lead">
-                        Завантаж додаток і знайди вільний скутер на карті. Якщо не готовий рушати зараз -
-                        <a href="#">
-                            забронюй.
-                        </a>
+                        <?php the_field('descr_how_ewings_№1') ?>
                     </p>
                 </div>
             </div>
 
             <div class="row text-left align-items-center pt-1 offset-md-2">
                 <div class="col-6 col-md-6 order-md-5">
-                    <img alt="image" class="img-fluid" src="<?php echo bloginfo('template_url'); ?>/assets/images/unlock-img.svg">
+                    <img alt="image" class="img-fluid" src="<?php the_field('img_how_ewings_№2'); ?>">
                 </div>
 
                 <div class="col-6 col-md-5">
-                    <h2><strong>Розблокуй замок</strong></h2>
+                    <h2><strong><?php the_field('title_how_ewings_№2'); ?></strong></h2>
                     <p class="lead">
-                        Відскануй QR-код на рулі, або введи код обраного самоката або велосипеда. Якщо пройшла оплата -
-                        відштовхнись правою ногою та тисни ручку справа.
+                        <?php the_field('descr_how_ewings_№2') ?>
                     </p>
                 </div>
             </div>
 
             <div class="row text-left align-items-center justify-content-start pt-1 pb-md-1 offset-md-2">
                 <div class="col-6 col-md-6">
-                    <img alt="image" class="img-fluid" src="<?php echo bloginfo('template_url'); ?>/assets/images/samokat-go.svg">
+                    <img alt="image" class="img-fluid" src="<?php the_field('img_how_ewings_№3'); ?>">
                 </div>
 
                 <div class="col-6 col-md-5">
-                    <h2><strong>Тепер ти їдеш</strong></h2>
+                    <h2><strong><?php the_field('title_how_ewings_№3'); ?></strong></h2>
                     <p class="lead">
-                        Будь обрежежним і дотримуйся правил дорожнього руху, пересувайся по велосипедним
-                        доріжкам. Тормоз знаходиться на лівій ручці
+                        <?php the_field('descr_how_ewings_№3') ?>
                     </p>
                 </div>
             </div>
 
             <div class="row text-left align-items-center pt-5 pb-md-5 offset-md-2">
                 <div class="col-6 col-md-6  order-md-5">
-                    <img alt="image" class="img-fluid" src="<?php echo bloginfo('template_url'); ?>/assets/images/parking-img.svg">
+                    <img alt="image" class="img-fluid" src="<?php the_field('img_how_ewings_№4'); ?>">
                 </div>
 
                 <div class="col-6 col-md-5">
-                    <h2><strong>Паркуй відповідально</strong></h2>
+                    <h2><strong><?php the_field('title_how_ewings_№4'); ?></strong></h2>
                     <p class="lead">
-                        Після поїздки паркуй e-wing на зеленій зоні,  на парковках e-wing або на парковках для
-                        велосипедів.
+                        <?php the_field('descr_how_ewings_№4') ?>
                     </p>
                 </div>
             </div>
@@ -281,14 +267,14 @@
                 <div class="col-lg-8 col-xl-6 text-center">
                     <div class="set-block">
                         <h3 class="text-uppercase">
-                            Встановлюй додаток вже зараз!
+                            <?php the_field('title_install_ewings'); ?>
                         </h3>
                     </div>
                     <div class="promo-store mt-md-3 mt-xl-4 text-center">
-                        <a href="#" class="mr-sm-2">
+                        <a href="<?php the_field('download_appstore'); ?>" class="mr-sm-2">
                             <img class="img-fluid" src="<?php echo bloginfo('template_url'); ?>/assets/images/app-store.png" alt="App-Store">
                         </a>
-                        <a href="#" class="mt-4">
+                        <a href="<?php the_field('download_googleplay'); ?>" class="mt-4">
                             <img class="img-fluid" src="<?php echo bloginfo('template_url'); ?>/assets/images/google-play.png" alt="Google-Play">
                         </a>
                     </div>
@@ -303,44 +289,14 @@
                 <div class="сol-12 col-lg-7 text-left mt-5">
                     <div class="season-block pb-2 ">
                         <span class="text-uppercase">
-                            Не обмежуй свій час!
+                            <?php the_field('title_time'); ?>
                         </span>
                         <h3>
-                            Для вашого комфорту ми пропонуємо
-                            <span>
-                                абонементи
-                            </span>
-                            на e-wings
+                            <?php the_field('descr_time'); ?>
                         </h3>
                     </div>
                     <div class="order-inputs">
-                        <form>
-                            <div class="choose-block ml-4 mt-5 d-block ">
-                                <div>
-                                    <input type="checkbox" id="chk" required />
-                                    <label for="chk" class="mb-3 pt-2">
-                                        Тижневий абонемент на одиницю e-wings
-                                    </label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="chk2" required />
-                                    <label for="chk2" class="pt-2">
-                                        Місячний абонемент на одиницю e-wings
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="input-group">
-                                <label for="first-name">Ім'я</label>
-                                <input type="text" id="first-name" required>
-                            </div>
-                            <div class="input-group">
-                                <label for="first-name">Телефон</label>
-                                <input type="tel" id="first-name" required>
-                            </div>
-                            <button class="btn" type="submit" class="mt-5 mb-5 text-uppercase">
-                                Замовити
-                            </button>
-                        </form>
+                        <?php echo do_shortcode('[contact-form-7 id="115" title="Contact form 1"]'); ?>
 
                     </div>
 
@@ -348,7 +304,7 @@
 
                 <div class="col-lg-5 d-flex align-items-start ">
                     <div class="d-flex align-content-sm-start" style="margin-top: -130px;">
-                        <img class="img-fluid w-100" src="<?php echo bloginfo('template_url'); ?>/assets/images/season-samokat.png" alt="">
+                        <img class="img-fluid w-100" src="<?php the_field('img_time_ewings_№1'); ?>">
                     </div>
                 </div>
             </div>

@@ -10,7 +10,7 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">
-                <img src="<?php echo bloginfo('template_url'); ?>/assets/images/footer-logo.svg" alt="Logo">
+                <?php the_custom_logo(); ?>
             </h6>
             <p class="d-flex justify-content-between justify-content-sm-around">
                 <a href="#">
